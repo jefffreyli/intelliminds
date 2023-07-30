@@ -11,6 +11,7 @@ import {
   XIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+import Link from "next/link";
 
 const links = [
   {
@@ -33,14 +34,14 @@ export default function Navbar() {
     <Popover className="relative bg-white">
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div>
-          <a href="/" className="flex items-center justify-center gap-x-5">
+          <Link href="/" className="flex items-center justify-center gap-x-5">
             <img
               className="h-8 w-auto sm:h-10"
               src="/logo.png"
               alt="Intelliminds"
             />
             <span className="sr-only font-semibold text-xl">Intelliminds</span>
-          </a>
+          </Link>
         </div>
         <div className="-mr-2 -my-2 md:hidden">
           <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -119,13 +120,13 @@ export default function Navbar() {
 
             {links.map(link => {
               return (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   {link.name}
-                </a>
+                </Link>
               );
             })}
 
@@ -220,7 +221,7 @@ export default function Navbar() {
               <div className="mt-6">
                 <nav className="grid gap-6">
                   {links.map(item => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
@@ -231,7 +232,7 @@ export default function Navbar() {
                       <div className="ml-4 text-base font-medium text-gray-900">
                         {item.name}
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
