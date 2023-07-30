@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Footer.jsx", "src/components/Contact.jsx", "src/components/Layout.jsx", "src/components/SectionHeader.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Footer.jsx", "src/components/Contact.jsx", "src/components/Layout.jsx", "src/components/SectionHeader.jsx", "src/components/Services/Services.jsx", "src/pages/services.jsx", "src/pages/404.jsx", "src/pages/_app.jsx", "src/pages/about.jsx", "src/pages/index.jsx", "src/pages/login.jsx", "src/pages/register.jsx", "src/pages/resources.jsx"],
   "exclude": ["node_modules"]
 }

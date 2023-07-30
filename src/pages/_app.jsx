@@ -1,9 +1,8 @@
-import type { AppProps } from "next/app";
 import "../styles/globals.css";
 import Layout from "../components/Layout";
 import Head from "next/head";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>

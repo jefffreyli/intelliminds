@@ -11,17 +11,10 @@ export default function Services() {
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
-              <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
-                  <InboxIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </span>
-              </div>
+              
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Stay on top of customer support
+                  1 on 1 College Consulting
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
@@ -39,8 +32,8 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="mt-8 border-t border-gray-200 pt-6">
-              <blockquote>
+            <div className="mt-8 border-gray-200 pt-6">
+              {/* <blockquote>
                 <div>
                   <p className="text-base text-gray-500">
                     &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed
@@ -62,7 +55,7 @@ export default function Services() {
                     </div>
                   </div>
                 </footer>
-              </blockquote>
+              </blockquote> */}
             </div>
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0">
@@ -80,17 +73,10 @@ export default function Services() {
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
             <div>
-              <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
-                  <SparklesIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </span>
-              </div>
+
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Better understand your customers
+                  SAT/ACT Tutoring
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
