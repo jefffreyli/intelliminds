@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTA() {
   return (
     <div className="bg-white h-screen">
@@ -6,16 +8,17 @@ export default function CTA() {
           <span className="block mb-2">Boost your productivity.</span>
           <span className="block">Start using IntelliMinds today.</span>
         </h2>
-        <p className="mt-10 text-lg leading-6 text-yellow-800">
+        <p className="mt-10 text-lg leading-6 text-gray-500 font-medium">
           Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
           Malesuada adipiscing sagittis vel nulla nec. Ac euismod vel sit
           maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
-          sagittis vel nulla nec. Ac euismod vel sit maecenas id pellentesque eu
-          sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+          sagittis vel nulla nec.
         </p>
-        <button className="btn btn-neutral px-3 capitalize mt-10">
-          Sign up now
-        </button>
+        <Link href="/register">
+          <button className="btn bg-orange-600 hover:bg-orange-700 text-white px-3 capitalize mt-10">
+            Sign up now
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -48,10 +48,6 @@ export default function Team() {
     <div className="bg-white">
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-            Meet our leadership
-          </h2>
-
           <ul
             role="list"
             className="space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0"
@@ -70,7 +66,7 @@ export default function Team() {
                     <div className="space-y-4">
                       <div className="text-lg leading-6 font-medium space-y-1">
                         <h3>{person.name}</h3>
-                        <p className="text-indigo-600">{person.role}</p>
+                        <p className="text-orange-600">{person.role}</p>
                       </div>
                       <div className="text-lg">
                         <p className="text-gray-500">{person.bio}</p>

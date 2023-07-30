@@ -1,17 +1,14 @@
-import { InboxIcon, SparklesIcon } from "@heroicons/react/solid";
+import {CheckIcon } from "@heroicons/react/solid";
+import Link from "next/link";
 
 export default function Services() {
   return (
     <div className="relative pt-16 pb-32 overflow-hidden">
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-48 "
-      />
+      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 " />
       <div className="relative">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+        <div className="lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
-              
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
                   1 on 1 College Consulting
@@ -22,13 +19,32 @@ export default function Services() {
                   laoreet sagittis viverra duis. In venenatis sem arcu pretium
                   pharetra at. Lectus viverra dui tellus ornare pharetra.
                 </p>
+                <div className="h-5"/>
+                <ul>
+                  {collegeConsultingFeatures.map(feature => {
+                    return (
+                      <li
+                        key={feature.feature}
+                        className="py-4 flex md:py-0 md:pb-4 font-medium"
+                      >
+                        <CheckIcon
+                          className="flex-shrink-0 h-6 w-6 text-green-500"
+                          aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base text-gray-500">
+                          {feature.feature}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
                 <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
+                  <Link
+                    href="/register"
+                    className="inline-flex bg-gradient-to-r from-yellow-600 to-orange-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-yellow-700 hover:to-orange-700"
                   >
                     Get started
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -73,7 +89,6 @@ export default function Services() {
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
             <div>
-
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
                   SAT/ACT Tutoring
@@ -84,13 +99,32 @@ export default function Services() {
                   laoreet sagittis viverra duis. In venenatis sem arcu pretium
                   pharetra at. Lectus viverra dui tellus ornare pharetra.
                 </p>
+                <div className="h-5"/>
+                <ul>
+                  {tutoringFeatures.map(feature => {
+                    return (
+                      <li
+                        key={feature.feature}
+                        className="py-4 flex md:py-0 md:pb-4 font-medium"
+                      >
+                        <CheckIcon
+                          className="flex-shrink-0 h-6 w-6 text-green-500"
+                          aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base text-gray-500">
+                          {feature.feature}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
                 <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
+                  <Link
+                    href="/register"
+                    className="inline-flex bg-gradient-to-r from-yellow-600 to-orange-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-yellow-700 hover:to-orange-700"
                   >
                     Get started
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -109,3 +143,24 @@ export default function Services() {
     </div>
   );
 }
+
+const collegeConsultingFeatures = [
+  {
+    feature: "First 5 sessions free",
+  },
+  {
+    feature: "Unlimited essay editing",
+  },
+  {
+    feature: "Personalized feedback",
+  },
+];
+
+const tutoringFeatures = [
+  {
+    feature: "First 3 sessions free",
+  },
+  {
+    feature: "Personalized feedback",
+  },
+];

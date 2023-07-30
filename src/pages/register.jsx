@@ -1,109 +1,108 @@
-// import {
-//     Flex,
-//     Box,
-//     FormControl,
-//     FormLabel,
-//     Input,
-//     InputGroup,
-//     HStack,
-//     InputRightElement,
-//     Stack,
-//     Button,
-//     Heading,
-//     Text,
-//     useColorModeValue,
-//     Link,
-// } from '@chakra-ui/react';
-// import { useState } from 'react';
-// import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
-
-// export default function SignupCard() {
-// const [showPassword, setShowPassword] = useState(false);
-
-// return (
-//     <Flex
-//     minH={'100vh'}
-//     align={'center'}
-//     justify={'center'}
-//     bg={useColorModeValue('gray.50', 'gray.800')}>
-//     <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
-//         <Stack align={'center'}>
-//         <Heading fontSize={'4xl'} textAlign={'center'}>
-//             Sign up
-//         </Heading>
-//         <Text fontSize={'lg'} color={'gray.600'}>
-//             to enjoy all of our cool features ✌️
-//         </Text>
-//         </Stack>
-//         <Box
-//         rounded={'lg'}
-//         bg={useColorModeValue('white', 'gray.700')}
-//         boxShadow={'lg'}
-//         p={8}>
-//         <Stack spacing={4}>
-//             <HStack>
-//             <Box>
-//                 <FormControl id="firstName" isRequired>
-//                 <FormLabel>First Name</FormLabel>
-//                 <Input type="text" />
-//                 </FormControl>
-//             </Box>
-//             <Box>
-//                 <FormControl id="lastName">
-//                 <FormLabel>Last Name</FormLabel>
-//                 <Input type="text" />
-//                 </FormControl>
-//             </Box>
-//             </HStack>
-//             <FormControl id="email" isRequired>
-//             <FormLabel>Email address</FormLabel>
-//             <Input type="email" />
-//             </FormControl>
-//             <FormControl id="password" isRequired>
-//             <FormLabel>Password</FormLabel>
-//             <InputGroup>
-//                 <Input type={showPassword ? 'text' : 'password'} />
-//                 <InputRightElement h={'full'}>
-//                 <Button
-//                     variant={'ghost'}
-//                     onClick={() =>
-//                     setShowPassword((showPassword) => !showPassword)
-//                     }>
-//                     {showPassword ? <ViewIcon /> : <ViewOffIcon />}
-//                 </Button>
-//                 </InputRightElement>
-//             </InputGroup>
-//             </FormControl>
-//             <Stack spacing={10} pt={2}>
-//             <Button
-//                 loadingText="Submitting"
-//                 size="lg"
-//                 bg={'blue.400'}
-//                 color={'white'}
-//                 _hover={{
-//                 bg: 'blue.500',
-//                 }}>
-//                 Sign up
-//             </Button>
-//             </Stack>
-//             <Stack pt={6}>
-//             <Text align={'center'}>
-//                 Already a user? <Link color={'blue.400'}>Login</Link>
-//             </Text>
-//             </Stack>
-//         </Stack>
-//         </Box>
-//     </Stack>
-//     </Flex>
-// );
-// }
-
-import React from 'react'
+import SectionHeader from "@/components/SectionHeader";
+import {
+  CancelButton,
+  RadioButtons,
+  SubmitButton,
+  TextArea,
+  TextBox,
+} from "../components/FormComponents";
+import { useState } from "react";
 
 const register = () => {
-  return (
-    <div>register</div>
-  )
-}
+  const [fullName, setFullName] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+  const [currentGrade, setCurrentGrade] = useState("");
+  const [service, setService] = useState("");
+  const [hearAboutUs, setHearAboutUs] = useState("");
 
-export default register
+  return (
+    <div className="mx-4 sm:mx-6 md:mx-10 lg:mx-12 xl:mx-16">
+      <SectionHeader title="Schedule Your First Session With Intelliminds" />
+
+      <form
+        onSubmit={e => {
+          e.preventDefault();
+          handleSubmit(e);
+          router.push("/confirmation");
+        }}
+        className="space-y-8 divide-y divide-gray-200 mx-auto"
+      >
+        <div className="space-y-8 divide-y divide-gray-200">
+          <div>
+            <div className="mt-6 space-y-6">
+              <TextBox
+                question="Full name"
+                type="text"
+                placeholder="First Last"
+                id="full-name"
+                setValue={setFullName}
+                borderTop={false}
+              />
+              <TextBox
+                question="Email address"
+                type="email"
+                placeholder="example@example.com"
+                id="email-address"
+                setValue={setEmailAddress}
+              />
+
+              <RadioButtons
+                question={"Current grade"}
+                id="current-grade"
+                setValue={setCurrentGrade}
+                options={[
+                  {
+                    value: "9th",
+                  },
+                  {
+                    value: "10th",
+                  },
+                  {
+                    value: "11th",
+                  },
+                  {
+                    value: "12th",
+                  },
+                ]}
+              />
+
+              <RadioButtons
+                question={"What would you like help with?"}
+                id="service"
+                setValue={setService}
+                options={[
+                  {
+                    value: "College Consulting",
+                  },
+                  {
+                    value: "SAT Tutoring",
+                  },
+                  {
+                    value: "ACT Tutoring",
+                  },
+                ]}
+              />
+
+              <TextArea
+                question="How did you hear about us?"
+                type="text"
+                rows={7}
+                id="hear-about-us"
+                setValue={setHearAboutUs}
+              />
+            </div>
+          </div>
+
+          <div className="py-10">
+            <div className="flex justify-end">
+              <CancelButton />
+              <SubmitButton />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default register;

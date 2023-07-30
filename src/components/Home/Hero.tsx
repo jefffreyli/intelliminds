@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -45,10 +46,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 1 }}
         >
-          <button className="btn btn-neutral capitalize px-3">
-            Get started
-          </button>
-          <button className="btn capitalize px-3">Learn more</button>
+          <Link href="/services">
+            <button className="btn btn-neutral capitalize px-3">
+              Learn more
+            </button>
+          </Link>
         </motion.div>
       </div>
       <motion.div

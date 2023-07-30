@@ -22,7 +22,9 @@
     "framer-motion": "^10.15.0",
     "next": "13.4.12",
     "react": "18.2.0",
+    "react-calendly": "^4.1.1",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
     "typescript": "5.1.6"
   },
   "devDependencies": {
