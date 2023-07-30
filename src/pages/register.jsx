@@ -8,7 +8,7 @@ import {
 } from "../components/FormComponents";
 import { useState } from "react";
 
-const register = () => {
+export default function register(){
   const [fullName, setFullName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
   const [currentGrade, setCurrentGrade] = useState("");
@@ -104,5 +104,3 @@ const register = () => {
     </div>
   );
 };
-
-export default register;
