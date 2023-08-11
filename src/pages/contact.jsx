@@ -3,7 +3,7 @@ import ContactCard from "../components/Contact/ContactCard";
 
 export default function contact() {
   return (
-    <div className="mx-16">
+    <div className="mx-16 h-screen">
       <SectionHeader title="Contact" />
       <ContactCard/>
     </div>

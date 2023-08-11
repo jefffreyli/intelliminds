@@ -15,7 +15,7 @@ const ContactCard = () => {
               </p>
             </div>
             <div className="mt-9">
-              <div className="flex">
+              {/* <div className="flex">
                 <div className="flex-shrink-0">
                   <PhoneIcon
                     className="h-6 w-6 text-gray-400"
@@ -24,9 +24,9 @@ const ContactCard = () => {
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <p>+1 (555) 123 4567</p>
-                  <p className="mt-1">Mon-Fri 8am to 6pm PST</p>
+                  <p className="mt-1">Mon-Fri 8am to 6pm EST</p>
                 </div>
-              </div>
+              </div> */}
               <div className="mt-6 flex">
                 <div className="flex-shrink-0">
                   <MailIcon
@@ -35,7 +35,7 @@ const ContactCard = () => {
                   />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
-                  <p>support@example.com</p>
+                  <p>intelliminds@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@ const ContactCard = () => {
                   />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
-                  <p>Discord link</p>
+                  <a>https://discord.gg/7PzzEJDnbj</a>
                 </div>
               </div>
             </div>

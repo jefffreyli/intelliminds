@@ -15,6 +15,32 @@ export default function register(){
   const [service, setService] = useState("");
   const [hearAboutUs, setHearAboutUs] = useState("");
 
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    let data = {
+      fullName,
+      emailAddress,
+      currentGrade,
+      service,
+      hearAboutUs,
+    };
+
+    fetch("/api/register", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then(res => {
+      console.log("Response received");
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+      }
+    });
+  };
+
   return (
     <div className="mx-4 sm:mx-6 md:mx-10 lg:mx-12 xl:mx-16">
       <SectionHeader title="Schedule Your First Session With Intelliminds" />
