@@ -20,3 +20,6 @@ yarn dev
 
 - Next.js
 - TailwindCSS + Daisy UI
+
+## Attributions
+Images by pch.vector on Freepik

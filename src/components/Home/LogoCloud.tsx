@@ -1,7 +1,7 @@
 export default function LogoCloud() {
   return (
-    <div className="">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div className="mx-6 sm:mx-10 md:mx-16 md:mb-28 md:-mt-20">
+      <div className="md:max-w-7xl md:mx-auto ">
         <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
           Consulting from the very best
         </p>
@@ -32,17 +32,17 @@ const logos = [
   {
     name: "University of Pennsylvania",
     src: "/colleges/upenn-logo.png",
-    size: "h-20 scale-[1.4]",
+    size: "h-20 scale-[1.5]",
   },
   {
     name: "Cornell University",
-    src: "/colleges/cornell-logo.svg",
-    size: "h-20 scale-125",
+    src: "/colleges/cornell-logo.png",
+    size: "h-20 scale-[1.4]",
   },
   {
     name: "New York University",
     src: "/colleges/nyu-logo.png",
-    size: "h-20 brightness-[1.2] hover:brightness-[1.3] scale-[2]",
+    size: "h-20 brightness-[1.2] hover:brightness-[1.5] scale-[1.4]",
   },
   {
     name: "Carnegie Mellon University",

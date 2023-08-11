@@ -1,4 +1,5 @@
 import { ArrowSmRightIcon } from "@heroicons/react/solid";
+import Link from "next/link";
 import React from "react";
 
 interface FeatureProps {
@@ -17,24 +18,24 @@ const Feature = ({ heading, text }: FeatureProps) => {
 
 const GridListWithCTA = () => {
   return (
-    <div className="mx-16 mb-32">
-      <div className="flex justify-center">
-        <div className="w-1/2">
+    <div className="mx-6 sm:mx-10 md:mx-16 mb-32">
+      <div className="flex-none md:flex justify-center">
+        <div className="md:w-1/2 w-full mb-6 md:mb-0">
           <h2 className="text-3xl font-bold mb-5">
             Know who your friends are at 2AM
           </h2>
           <button className="flex items-center space-x-2 text-teal-500 font-medium border border-teal-500 rounded-md p-2">
-            <a
-              href="https://forms.gle/sAtTLVNttV7jdC6A8"
+            <Link
+              href="/register"
               target="_blank"
               rel="noopener noreferrer"
             >
               Get started now
-            </a>
+            </Link>
             <ArrowSmRightIcon className="h-5 w-5" />
           </button>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2 w-full">
           <div className="space-y-4">
             <p>
               Whether you procrastinate and start your homework at 1AM or rush

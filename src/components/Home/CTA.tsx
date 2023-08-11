@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <div className="bg-white h-screen">
-      <div className="max-w-5xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+    <div className="bg-white h-screen mx-6 sm:mx-10 md:mx-16">
+      <div className="md:max-w-5xl md:mx-auto text-center py-16 sm:py-20">
         <h2 className="text-6xl font-extrabold text-black">
           <span className="block mb-2">Boost your productivity.</span>
           <span className="block">Start using IntelliMinds today.</span>

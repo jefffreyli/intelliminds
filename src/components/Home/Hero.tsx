@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <motion.div
-      className="flex justify-center items-center -mt-10 mx-16 gap-x-16 h-screen"
+      className="flex flex-wrap sm:flex-nowrap justify-center items-center mx-6 sm:mx-10 md:mx-16 gap-x-16 h-screen md:-mt-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="w-1/2">
+      <div className="md:w-1/2 w-full">
         <motion.h1
           className="font-bold text-4xl md:text-6xl"
           initial={{ opacity: 0, y: -20 }}
@@ -54,7 +54,7 @@ export default function Hero() {
         </motion.div>
       </div>
       <motion.div
-        className="w-1/2"
+        className="md:w-1/2 w-full "
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.2, duration: 1, type: "spring" }}
