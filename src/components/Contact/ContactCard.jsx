@@ -11,7 +11,7 @@ const ContactCard = () => {
             </h2>
             <div className="mt-3">
               <p className="text-lg text-gray-500">
-                Set up 1 on 1 meetings with founders
+                Set up meetings with founders
               </p>
             </div>
             <div className="mt-9">
