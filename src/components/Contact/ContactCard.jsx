@@ -46,8 +46,8 @@ const ContactCard = () => {
             </h2>
             <div className="mt-3">
               <p className="text-lg text-gray-500">
-                Hop in to ask us any of your questions. We'll answer all of
-                them!
+                Hop in to ask us any of your questions and engage with other clients through this stressful time of your lives. We'll answer all of
+                those questions!
               </p>
             </div>
             <div className="mt-9">
@@ -60,6 +60,7 @@ const ContactCard = () => {
                 </div>
                 <div className="ml-3 text-base text-gray-500">
                   <a>https://discord.gg/7PzzEJDnbj</a>
+                  <a></a>
                 </div>
               </div>
             </div>
