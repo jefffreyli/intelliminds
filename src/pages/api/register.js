@@ -13,8 +13,8 @@ export default function contact(req, res) {
    });
 
    const mailData = {
-      from: "intelliminds@gmail.com",
-      to: `intelliminds@gmail.com, ${req.body.email}`,
+      from: "intellimindsbr@gmail.com",
+      to: `intellimindsbr@gmail.com, ${req.body.email}`,
       subject: `Copy of ${team} Registration From ${req.body.fullName}`,
       text: req.body.origin + " | Sent from: " + req.body.emailAddress,
       html: `

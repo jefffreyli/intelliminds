@@ -11,7 +11,7 @@ export default function Hero() {
     >
       <div className="md:w-1/2 w-full">
         <motion.h1
-          className="font-bold text-4xl md:text-6xl"
+          className="font-bold text-4xl md:text-6xl text-black"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
@@ -19,7 +19,7 @@ export default function Hero() {
           College consulting
         </motion.h1>
         <motion.h1
-          className="font-bold text-4xl md:text-6xl"
+          className="font-bold text-4xl md:text-6xl text-black"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
@@ -31,6 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 1 }}
+          className="text-gray-500"
         >
           Never feel nervous or unprepared for a test again. Our volunteers are
           certified to tutor in subjects ranging from STEM to ELA to social

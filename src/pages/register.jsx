@@ -7,6 +7,7 @@ import {
   TextBox,
 } from "../components/FormComponents";
 import { useState } from "react";
+import router from 'next/router'
 
 export default function register(){
   const [fullName, setFullName] = useState("");

@@ -10,8 +10,8 @@ interface FeatureProps {
 const Feature = ({ heading, text }: FeatureProps) => {
   return (
     <div className="col-span-1">
-      <h3 className="text-xl font-semibold">{heading}</h3>
-      <p>{text}</p>
+      <h3 className="text-xl font-semibold text-black">{heading}</h3>
+      <p className="text-gray-500">{text}</p>
     </div>
   );
 };
@@ -21,7 +21,7 @@ const GridListWithCTA = () => {
     <div className="mx-6 sm:mx-10 md:mx-16 mb-32">
       <div className="flex-none md:flex justify-center">
         <div className="md:w-1/2 w-full mb-6 md:mb-0">
-          <h2 className="text-3xl font-bold mb-5">
+          <h2 className="text-3xl font-bold mb-5 text-black">
             Know who your friends are at 2AM
           </h2>
           <button className="flex items-center space-x-2 text-teal-500 font-medium border border-teal-500 rounded-md p-2">
@@ -36,7 +36,7 @@ const GridListWithCTA = () => {
           </button>
         </div>
         <div className="md:w-1/2 w-full">
-          <div className="space-y-4">
+          <div className="space-y-4 text-gray-500">
             <p>
               Whether you procrastinate and start your homework at 1AM or rush
               home to finish it as soon as possible, you will have access to

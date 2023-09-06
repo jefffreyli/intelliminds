@@ -5,7 +5,7 @@ import CollegeLogoCloud from "../components/Home/LogoCloud";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Hero />
       <CollegeLogoCloud />
       <Features />
