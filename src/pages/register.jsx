@@ -79,6 +79,9 @@ export default function register(){
                 setValue={setCurrentGrade}
                 options={[
                   {
+                    value: "8th grade or lower",
+                  },
+                  {
                     value: "9th",
                   },
                   {
@@ -90,6 +93,7 @@ export default function register(){
                   {
                     value: "12th",
                   },
+                  
                 ]}
               />
 

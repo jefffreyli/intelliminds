@@ -37,14 +37,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const mailOptions = {
         from: 'intellimindsbr@gmail.com',
         to: emailAddress,
-        subject: 'Email Confirmation for sign up',
+        subject: 'Intelliminds Sign up Form Responses',
+        text: emailText,
+        html: emailHtml,
+    };
+
+    const mailOptionsToIntelliminds = {
+        from: 'intellimindsbr@gmail.com',
+        to: 'intellimindsbr@gmail.com',
+        subject: 'New Signup Notification',
         text: emailText,
         html: emailHtml,
     };
 
     try {
-        const info = await transporter.sendMail(mailOptions);
-        res.status(200).json({ message: 'Email sent successfully!', messageId: info.messageId });
+        await transporter.sendMail(mailOptions);
+        await transporter.sendMail(mailOptionsToIntelliminds);
+        res.status(200).json({ message: 'Email sent successfully!'})
     } catch (error) {
         console.error('Error occurred while sending email: ', error);
         res.status(500).json({ message: 'Error while sending email' });
