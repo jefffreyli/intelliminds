@@ -27,7 +27,7 @@ export default function register(){
       hearAboutUs,
     };
 
-    fetch("/api/register", {
+    fetch("/api/gmailsend", {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
