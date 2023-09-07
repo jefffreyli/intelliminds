@@ -9,6 +9,14 @@
     background-color: white;
 }
 
+input{
+    color: black;
+}
+
+textarea{
+    color: black
+}
+
 .notion-page-header {
     display: none;
 }

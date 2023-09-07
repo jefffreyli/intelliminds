@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function confirmation() {
   return (
     <>
-      <div className="h-full pt-16 pb-12 flex flex-col bg-white">
+      <div className="h-screen -mt-20 flex flex-col bg-white">
         <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="py-4">
             <div className="text-center">

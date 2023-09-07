@@ -1,23 +1,3 @@
-// import { PopupButton } from "react-calendly";
-
-// export function Calendly({ link, text, isClient, calendlyRootRef }) {
-//   return (
-//     <div>
-//       <hr className="mt-6 border-t border-gray-200"></hr>
-//       {isClient && (
-//         <PopupButton
-//           className="mt-6 text-sm text-blue-600 font-semibold"
-//           // url="https://calendly.com/wcanyc/wca-donation-pick-up"
-//           url={link}
-//           rootElement={calendlyRootRef.current}
-//           // text="Click here to schedule a date and time for us to pickup your donation(s)."
-//           text={text}
-//         />
-//       )}
-//     </div>
-//   );
-// }
-
 export function Heading({ title, subtitle }) {
   return (
     <div className="flex flex-col space-y-5">
@@ -51,7 +31,7 @@ export function TextBox({ question, type, id, placeholder, setValue, borderTop=t
             name={id}
             id={id}
             placeholder={placeholder}
-            className="flex-1 block max-w-3xl focus:ring-blue-500 focus:border-blue-500 min-w-0 rounded-none rounded-r-md text-sm border-gray-300"
+            className="flex-1 block max-w-3xl focus:ring-orange-500 focus:border-orange-500 min-w-0 rounded-none rounded-r-md text-sm border-gray-300"
           />
         </div>
       </div>
@@ -76,7 +56,7 @@ export function DropDown({ question, id, options, setValue, borderTop=true }) {
           }}
           id={id}
           name={id}
-          className="max-w-lg block focus:ring-blue-500 focus:border-blue-500 w-full shadow-sm sm:max-w-xs text-sm border-gray-300 rounded-md"
+          className="max-w-lg block focus:ring-orange-500 focus:border-orange-500 w-full shadow-sm sm:max-w-xs text-sm border-gray-300 rounded-md"
         >
           {options.map((option, index) => (
             <option key={index}>{option}</option>
@@ -105,16 +85,22 @@ export function TextArea({ question, id, setValue, rows = 3, borderTop=true, }) 
           id={id}
           name={id}
           rows={rows}
-          className="max-w-lg shadow-sm block w-full focus:ring-blue-500 focus:border-blue-500 text-sm border border-gray-300 rounded-md"
+          className="max-w-lg shadow-sm block w-full focus:ring-orange-500 focus:border-orange-500 text-sm border border-gray-300 rounded-md"
         />
       </div>
     </div>
   );
 }
 
-export function RadioButtons({ question, id, options, setValue, borderTop=true }) {
+export function RadioButtons({ question, id, options, setValue, borderTop = true }) {
   return (
-   <div className={borderTop ? "grid grid-cols-3 gap-4 items-start border-gray-200 pt-5 border-t" : "grid grid-cols-3 gap-4 items-start border-gray-200 pt-5"}>
+    <div
+      className={
+        borderTop
+          ? "grid grid-cols-3 gap-4 items-start border-gray-200 pt-5 border-t"
+          : "grid grid-cols-3 gap-4 items-start border-gray-200 pt-5"
+      }
+    >
       <label
         htmlFor={id}
         className="block text-sm font-medium text-gray-700 mt-px pt-2"
@@ -126,15 +112,15 @@ export function RadioButtons({ question, id, options, setValue, borderTop=true }
           {options.map((option, index) => (
             <div key={index} className="flex items-center">
               <input
-                // required
+                required
                 value={option.value}
-                onChange={e => {
+                onChange={(e) => {
                   setValue(e.target.value);
                 }}
                 id={option.value}
-                name={option.value}
+                name={id} // Use the same name attribute for all radio buttons
                 type="radio"
-                className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300"
+                className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300"
               />
               <label
                 htmlFor={option.value}
@@ -149,6 +135,7 @@ export function RadioButtons({ question, id, options, setValue, borderTop=true }
     </div>
   );
 }
+
 
 export default function TextBoxWithIcon({
   text,

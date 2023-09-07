@@ -111,6 +111,15 @@ export default function register(){
                   {
                     value: "ACT Tutoring",
                   },
+                  {
+                    value: "Transcript/GPA",
+                  },
+                  {
+                    value: "SHSAT",
+                  },
+                  {
+                    value: "K-8th Grade Tutoring",
+                  },
                 ]}
               />
 
