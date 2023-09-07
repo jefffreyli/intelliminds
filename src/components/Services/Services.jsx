@@ -19,24 +19,23 @@ export default function Services() {
                 at. Lectus viverra dui tellus ornare pharetra.
               </p>
               <div className="h-5" />
-              <ul>
-                {collegeConsultingFeatures.map(feature => {
-                  return (
-                    <li
-                      key={feature.feature}
-                      className="py-4 flex md:py-0 md:pb-4 font-medium"
-                    >
-                      <CheckIcon
-                        className="flex-shrink-0 h-6 w-6 text-green-500"
-                        aria-hidden="true"
-                      />
-                      <span className="ml-3 text-base text-gray-500">
-                        {feature.feature}
-                      </span>
-                    </li>
-                  );
-                })}
+              <ul className="grid grid-cols-2 gap-4">
+                {collegeConsultingFeatures.map((feature, index) => (
+                  <li
+                    key={feature.feature}
+                    className="py-4 flex md:py-0 md:pb-4 font-medium"
+                  >
+                    <CheckIcon
+                      className="flex-shrink-0 h-6 w-6 text-green-500"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3 text-base text-gray-500">
+                      {feature.feature}
+                    </span>
+                  </li>
+                ))}
               </ul>
+
               <div className="mt-6">
                 <Link
                   href="/register"
@@ -111,19 +110,135 @@ export default function Services() {
           </div>
         </div>
       </div>
+
+
+
+      <div className="mt-24 flex justify-center">
+        <div className="md:flex justify-center items-center">
+          <div className="w-full md:w-1/2">
+            <div>
+              <div className="mt-6">
+                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                  Transcript & GPA
+                </h2>
+                <p className="mt-4 text-lg text-gray-500">
+                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
+                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
+                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
+                  pharetra at. Lectus viverra dui tellus ornare pharetra.
+                </p>
+                <div className="h-5" />
+                <ul>
+                  {transcriptFeatures.map(feature => {
+                    return (
+                      <li
+                        key={feature}
+                        className="py-4 flex md:py-0 md:pb-4 font-medium"
+                      >
+                        <CheckIcon
+                          className="flex-shrink-0 h-6 w-6 text-green-500"
+                          aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base text-gray-500">
+                          {feature}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <div className="mt-6">
+                  <Link
+                    href="/register"
+                    className="mb-16 md:mb-0 inline-flex bg-gradient-to-r from-cyan-500 to-blue-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:opacity-90 duration-300"
+                  >
+                    Get started
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="md:flex justify-center items-center">
+          <div className="w-full md:w-1/2">
+            <div>
+              <div className="mt-6">
+                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                  SHSAT (NYC Only)
+                </h2>
+                <p className="mt-4 text-lg text-gray-500">
+                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
+                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
+                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
+                  pharetra at. Lectus viverra dui tellus ornare pharetra.
+                </p>
+                <div className="h-5" />
+                <ul>
+                  {shsatFeatures.map(feat => {
+                    return (
+                      <li
+                        key={feat}
+                        className="py-4 flex md:py-0 md:pb-4 font-medium"
+                      >
+                        <CheckIcon
+                          className="flex-shrink-0 h-6 w-6 text-green-500"
+                          aria-hidden="true"
+                        />
+                        <span className="ml-3 text-base text-gray-500">
+                          {feat}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <div className="mt-6">
+                  <Link
+                    href="/register"
+                    className="mb-16 md:mb-0 inline-flex bg-gradient-to-r from-purple-500 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:opacity-90 duration-300"
+                  >
+                    Get started
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   );
 }
 
 const collegeConsultingFeatures = [
   {
-    feature: "First 5 sessions free",
-  },
-  {
     feature: "Unlimited essay editing",
   },
   {
     feature: "Personalized feedback",
+  },
+  {
+    feature: "Personal statement",
+  },
+  {
+    feature: "Common App profile",
+  },
+  {
+    feature: "Supplements",
+  },
+  {
+    feature: "Scholarship applications",
+  },
+  {
+    feature: "Interview preparation",
+  },
+  {
+    feature: "3 times a week",
+  },
+  {
+    feature: "First 5 sessions free",
   },
 ];
 
@@ -134,4 +249,16 @@ const tutoringFeatures = [
   {
     feature: "Personalized feedback",
   },
+  {
+    feature: "Reading, writing, math sections",
+  },
+
+];
+
+const transcriptFeatures = [
+  "Coursework, homework, test preparation"
+];
+
+const shsatFeatures = [
+  "Reading, writing, math sections"
 ];
