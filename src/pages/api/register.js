@@ -14,9 +14,9 @@ export default function contact(req, res) {
 
    const mailData = {
       from: "intellimindsbr@gmail.com",
-      to: `intellimindsbr@gmail.com, ${req.body.email}`,
-      subject: `Copy of ${team} Registration From ${req.body.fullName}`,
-      text: req.body.origin + " | Sent from: " + req.body.emailAddress,
+      to: `intellimindsbr@gmail.com, ${req.body.emailAddress}`,
+      subject: `Copy of IntelliMinds Registration From ${req.body.fullName}`,
+      // text: req.body.hearAboutUs + " | Sent from: " + req.body.emailAddress,
       html: `
              <style>body {
                margin: 0;

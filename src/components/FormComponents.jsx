@@ -126,7 +126,7 @@ export function RadioButtons({ question, id, options, setValue, borderTop=true }
           {options.map((option, index) => (
             <div key={index} className="flex items-center">
               <input
-                required
+                // required
                 value={option.value}
                 onChange={e => {
                   setValue(e.target.value);
