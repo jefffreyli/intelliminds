@@ -289,18 +289,9 @@ const collegeConsultingFeatures = [
   {
     feature: "Interview preparation",
   },
-  {
-    feature: "3 times a week",
-  },
-  {
-    feature: "First 5 sessions free",
-  },
 ];
 
 const testPrepFeatures = [
-  {
-    feature: "First 3 sessions free",
-  },
   {
     feature: "Personalized feedback",
   },
