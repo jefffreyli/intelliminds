@@ -1,38 +1,45 @@
 const people = [
   {
     name: "Adam Sultan",
-    role: "Co-Founder",
+    role: "Vice President",
     imageUrl:
       "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
+    bio: "Adam is a freshman at Carnegie Mellon University, Majoring in Data Science",
   },
   {
     name: "Samen Hossain",
     role: "Co-Founder",
     imageUrl:
       "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
+    bio: "Samen is a freshman at University of Pennsylvania, Majoring in math and computer science",
   },
   {
     name: "Benjamin Chong",
     role: "Co-Founder",
     imageUrl:
       "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
+    bio: "Benjamin, is a 18 year old incoming freshman at Cornell. He is majoring in Pre-Med. He likes to spend time playing basketball, watching movies, and working out",
+  },
+  {
+    name: "Ravnoor Bedi",
+    role: "Co-Founder",
+    imageUrl:
+      "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    bio: "Ravnoor, is a 18 year old incoming freshman at Cornell. He is majoring in computer science, with a focus in AI and maybe math. He likes to spend time playing basketball, watching movies, and working out.",
   },
   {
     name: "Jeffrey Li",
     role: "Lead Web Developer ",
     imageUrl:
       "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
+    bio: "Jeffrey is a freshman at Massachussets Institute of Technology, majoring in computer science and AI",
   },
   {
     name: "Shad Talha",
     role: "Marketing Advisor",
     imageUrl:
       "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
+    bio: "Shad is a freshman at NYU, majoring in computer science and gender studies",
   },
   {
     name: "Chowdhury Raza",
