@@ -4,7 +4,7 @@ const people = [
     role: "President/Founder",
     imageUrl:
       "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    bio: "Benjamin, is a 18 year old incoming freshman at Cornell. He is majoring in Pre-Med. He likes to spend time playing basketball, watching movies, and working out",
+    bio: "Benjamin is a freshman at Cornell. He is majoring in Pre-Med. He likes to spend time playing basketball, watching movies, and working out",
   },
   {
     name: "Adam Sultan",
