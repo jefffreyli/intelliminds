@@ -35,7 +35,7 @@ const ContactCard = () => {
                   />
                 </div>
                 <div className="ml-3 text-base text-gray-500">
-                  <p>intelliminds@gmail.com</p>
+                  <p>intellimindsbr@gmail.com</p>
                 </div>
               </div>
             </div>
