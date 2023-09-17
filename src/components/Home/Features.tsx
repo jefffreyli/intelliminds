@@ -22,7 +22,7 @@ const GridListWithCTA = () => {
       <div className="flex-none md:flex justify-center">
         <div className="md:w-1/2 w-full mb-6 md:mb-0">
           <h2 className="text-3xl font-bold mb-5 text-black">
-            Know who your friends are at 2AM
+            Get into your dream school now.
           </h2>
           <button className="flex items-center space-x-2 text-teal-500 font-medium border border-teal-500 rounded-md p-2">
             <Link
@@ -38,9 +38,7 @@ const GridListWithCTA = () => {
         <div className="md:w-1/2 w-full">
           <div className="space-y-4 text-gray-500">
             <p>
-              Whether you procrastinate and start your homework at 1AM or rush
-              home to finish it as soon as possible, you will have access to
-              online tutors 24/7.
+            Turn your academic aspirations into reality with our comprehensive college consulting and tutoring services. Let us guide you toward your dream school admission and a brighter future.
             </p>
             <p>
               Get help with that pesky homework problem, break through an acute
@@ -57,7 +55,7 @@ const GridListWithCTA = () => {
         <Feature
           heading={"Build Relationships"}
           text={
-            "We'll match you with IntelliBuddies based on your personality type- our goal is to help you enjoy learning so that it no longer feels like a chore."
+            "We'll match you with experienced tutors from your dream school. Our goal is to help you enjoy learning so that it no longer feels like a chore."
           }
         />
         <Feature
@@ -69,13 +67,13 @@ const GridListWithCTA = () => {
         <Feature
           heading={"On Demand Support"}
           text={
-            "You'll have access to our pool of IntelliBuddies 24/7. We'll make sure you get that essay submitted on time!"
+            "You'll have access to our pool of tutors 24/7. We'll make sure you get that essay submitted on time!"
           }
         />
         <Feature
           heading={"Flexible Schedules"}
           text={
-            "Want a break from regular sessions? No worries! Just let your Intellibuddy know and you can reschedule your session for that week."
+            "Want a break from regular sessions? No worries! Just let your tutor know and you can reschedule your session for that week."
           }
         />
       </div>

@@ -1,4 +1,6 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import {RxDiscordLogo} from 'react-icons/rx'
+import Link from "next/link";
 
 const ContactCard = () => {
   return (
@@ -34,8 +36,8 @@ const ContactCard = () => {
                     aria-hidden="true"
                   />
                 </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <p>intellimindsbr@gmail.com</p>
+                <div className="ml-3 text-base text-blue-500 underline">
+                  <Link target="_blank" href="mailto:intellimindsbr@gmail.com">intellimindsbr@gmail.com</Link>
                 </div>
               </div>
             </div>
@@ -53,13 +55,13 @@ const ContactCard = () => {
             <div className="mt-9">
               <div className="mt-6 flex">
                 <div className="flex-shrink-0">
-                  <MailIcon
+                  <RxDiscordLogo
                     className="h-6 w-6 text-gray-400"
                     aria-hidden="true"
                   />
                 </div>
-                <div className="ml-3 text-base text-gray-500">
-                  <a>https://discord.gg/7PzzEJDnbj</a>
+                <div className="ml-3 text-base text-blue-500 underline">
+                  <Link target="_blank" href="https://discord.gg/7PzzEJDnbj">https://discord.gg/7PzzEJDnbj</Link>
                   <a></a>
                 </div>
               </div>

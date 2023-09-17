@@ -13,10 +13,7 @@ export default function Services() {
                 1 on 1 College Consulting
               </h2>
               <p className="mt-4 text-lg text-gray-500">
-                Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet
-                sagittis viverra duis. In venenatis sem arcu pretium pharetra
-                at. Lectus viverra dui tellus ornare pharetra.
+                We will pair you with tutors who have either attended your dream schools or institutions with similar academic excellence, ensuring you receive guidance from those who understand your aspirations firsthand. Our aim is to connect you with mentors who can not only help you reach your academic goals but also inspire you to excel and achieve your dream school admission.
               </p>
               <div className="h-5" />
               <ul className="grid grid-cols-2 gap-4">
@@ -38,8 +35,8 @@ export default function Services() {
 
               <div className="mt-6">
 
-                  <p className="text-gray-500">$300/month</p>
-                  <p className="text-gray-400 text-xs mb-3">Reduction of $25 per month for every 3 clients referred</p>
+                <p className="text-gray-500 mb-2">$300/month</p>
+                {/* <p className="text-gray-400 text-xs mb-3">Reduction of $25 per month for every 3 clients referred</p> */}
                 <Link
                   href="/register"
                   className="inline-flex bg-gradient-to-r from-yellow-600 to-orange-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:opacity-90 duration-300"
@@ -67,13 +64,10 @@ export default function Services() {
             <div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  SAT/ACT Tutoring
+                  SAT & ACT Tutoring
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
+                  Elevate your SAT/ACT scores with our expert tutoring services. Receive personalized feedback and targeted guidance to excel in the reading, writing, and math sections of these crucial exams.
                 </p>
                 <div className="h-5" />
                 <ul>
@@ -95,8 +89,8 @@ export default function Services() {
                   })}
                 </ul>
                 <div className="mt-6">
-                <p className="text-gray-500">$200/month</p>
-                  <p className="text-gray-400 text-xs mb-3">Reduction of $25 per month for every 3 clients referred</p>
+                  <p className="text-gray-500 mb-2">$200/month</p>
+                  {/* <p className="text-gray-400 text-xs mb-3">Reduction of $25 per month for every 3 clients referred</p> */}
                   <Link
                     href="/register"
                     className="mb-16 md:mb-0 inline-flex bg-gradient-to-r from-emerald-500 to-teal-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:opacity-90 duration-300"
@@ -119,7 +113,7 @@ export default function Services() {
 
 
 
-      <div className="mt-24 flex justify-center">
+      <div className="mt-24 flex justify-between">
         <div className="md:flex justify-center items-center">
           <div className="w-full md:w-1/2">
             <div>
@@ -128,10 +122,7 @@ export default function Services() {
                   Transcript & GPA
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
+                  Elevate your academic journey with our services. We specialize in transcript and GPA improvements, as well as comprehensive support for coursework, homework, and test preparation to help you excel academically.
                 </p>
                 <div className="h-5" />
                 <ul>
@@ -153,7 +144,7 @@ export default function Services() {
                   })}
                 </ul>
                 <div className="mt-6">
-                <p className="text-gray-500 mb-3">$60/month</p>
+                  <p className="text-gray-500 mb-3">$75/month</p>
                   <Link
                     href="/register"
                     className="mb-16 md:mb-0 inline-flex bg-gradient-to-r from-cyan-500 to-blue-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:opacity-90 duration-300"
@@ -176,10 +167,7 @@ export default function Services() {
                   SHSAT (NYC Only)
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
+                Prepare effectively for the SHSAT with our experienced tutors (from Stuyvesant and Bronx Science) covering reading, writing, and math sections. Gain the skills and confidence you need to excel in this crucial exam and secure your spot in a prestigious NYC specialized high school.
                 </p>
                 <div className="h-5" />
                 <ul>
@@ -201,7 +189,7 @@ export default function Services() {
                   })}
                 </ul>
                 <div className="mt-6">
-                <p className="text-gray-500 mb-3">$150/month</p>
+                  <p className="text-gray-500 mb-3">$150/month</p>
                   <Link
                     href="/register"
                     className="mb-16 md:mb-0 inline-flex bg-gradient-to-r from-purple-500 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:opacity-90 duration-300"
@@ -215,18 +203,15 @@ export default function Services() {
         </div>
 
 
-        <div className="md:flex justify-center items-center">
-          <div className="w-full md:w-1/2">
+        {/* <div className="md:flex justify-center items-center">
+          <div className="">
             <div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
                   K-8th Grade
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
+                Elevate your child's elementary and middle school education with our experienced tutors.
                 </p>
                 <div className="h-5" />
                 <ul>
@@ -248,7 +233,7 @@ export default function Services() {
                   })}
                 </ul>
                 <div className="mt-6">
-                <p className="text-gray-500 mb-3">$50/month</p>
+                  <p className="text-gray-500 mb-3">$50/month</p>
                   <Link
                     href="/register"
                     className="mb-16 md:mb-0 inline-flex bg-gradient-to-r from-gray-500 to-black bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:opacity-90 duration-300"
@@ -259,7 +244,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
       </div>
@@ -296,7 +281,7 @@ const testPrepFeatures = [
     feature: "Personalized feedback",
   },
   {
-    feature: "Reading, writing, math sections",
+    feature: "Reading, writing, math, science (ACT) sections",
   },
 
 ];

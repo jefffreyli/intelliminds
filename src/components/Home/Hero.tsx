@@ -16,7 +16,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          College consulting
+          On Demand Tutoring
         </motion.h1>
         <motion.h1
           className="font-bold text-4xl md:text-6xl text-black"
@@ -24,7 +24,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          on demand
+          and Consulting at Affordable Prices
         </motion.h1>
         <div className="h-10" />
         <motion.p
@@ -33,11 +33,7 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 1 }}
           className="text-gray-500"
         >
-          Never feel nervous or unprepared for a test again. Our volunteers are
-          certified to tutor in subjects ranging from STEM to ELA to social
-          studies. Whether you want to catch up on homework or learn a new
-          topic, we&apos;re here for you, on demand, 24/7. Did we mention our
-          tutors are volunteers? Yes, our services are 100% free!
+          On demand tutoring and consulting offers instant access to experienced educators and advisors, catering to your specific learning or problem-solving needs. Get the expertise you require, precisely when you need it, with our convenient and flexible platform.
         </motion.p>
 
         <div className="h-10" />

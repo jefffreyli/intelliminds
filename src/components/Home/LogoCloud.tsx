@@ -35,6 +35,11 @@ const logos = [
     size: "h-20 scale-[1.5]",
   },
   {
+    name: "Brown University",
+    src: "/colleges/brown-logo.png",
+    size: "h-20 brightness-[1.2] hover:brightness-[1.5] scale-[1.4]",
+  },
+  {
     name: "Cornell University",
     src: "/colleges/cornell-logo.png",
     size: "h-20 scale-[1.4]",

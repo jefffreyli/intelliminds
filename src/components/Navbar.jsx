@@ -26,10 +26,10 @@ const links = [
     name: "Contact",
     href: "/contact",
   },
-  {
-    name: "About",
-    href: "/about",
-  },
+  // {
+  //   name: "About",
+  //   href: "/about",
+  // },
 ];
 
 function classNames(...classes) {

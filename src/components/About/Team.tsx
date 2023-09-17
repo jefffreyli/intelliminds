@@ -26,7 +26,7 @@ const people = [
     imageUrl:
       "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
     bio: "Shad is a freshman at NYU, majoring in computer science and gender studies",
-  }
+  },
   {
     name: "Jeffrey Li",
     role: "Lead Web Developer",
