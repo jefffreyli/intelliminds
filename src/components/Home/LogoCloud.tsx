@@ -1,6 +1,6 @@
 export default function LogoCloud() {
   return (
-    <div className="mx-6 sm:mx-10 md:mx-16 md:mb-28 md:-mt-20">
+    <div className="mx-6 sm:mx-10 md:mx-16 mb-12 md:mb-40 md:-mt-20">
       <div className="md:max-w-7xl md:mx-auto ">
         <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
           Consulting from the very best
@@ -27,31 +27,31 @@ const logos = [
   {
     name: "Massachusetts Institute of Technology",
     src: "/colleges/mit-logo.svg",
-    size: "h-20 scale-[0.95]",
+    size: "md:h-20 scale-[0.85] md:scale-[0.95]",
   },
   {
     name: "University of Pennsylvania",
     src: "/colleges/upenn-logo.png",
-    size: "h-20 scale-[1.5]",
+    size: "md:h-20 scale-[1.3] md:scale-[1.5]",
   },
   {
     name: "Brown University",
     src: "/colleges/brown-logo.png",
-    size: "h-20 brightness-[1.2] hover:brightness-[1.5] scale-[1.4]",
+    size: "md:h-20 brightness-[1.2] hover:brightness-[1.5] scale-[1.2] md:scale-[1.4]",
   },
   {
     name: "Cornell University",
     src: "/colleges/cornell-logo.png",
-    size: "h-20 scale-[1.4]",
+    size: "md:h-20 scale-[1.2] md:scale-[1.4]",
   },
   {
     name: "New York University",
     src: "/colleges/nyu-logo.png",
-    size: "h-20 brightness-[1.2] hover:brightness-[1.5] scale-[1.4]",
+    size: "md:h-20 brightness-[1.2] hover:brightness-[1.5] scale-[1.2] md:scale-[1.4]",
   },
   {
     name: "Carnegie Mellon University",
     src: "/colleges/cmu-logo.svg",
-    size: "h-20 scale-[1.2]",
+    size: "md:h-20 scale-[1] md:scale-[1.2]",
   },
 ];

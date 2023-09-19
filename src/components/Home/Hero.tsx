@@ -24,7 +24,15 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          and Consulting at Affordable Prices
+          and Consulting at
+        </motion.h1>
+        <motion.h1
+          className="font-bold text-4xl md:text-6xl text-black underline decoration-yellow-500 underline-offset-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 1 }}
+        >
+           Affordable Prices
         </motion.h1>
         <div className="h-10" />
         <motion.p

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <div className="bg-white h-screen mx-6 sm:mx-10 md:mx-16">
+    <div className="bg-white pt-20 pb-60 mx-6 sm:mx-10 md:mx-16">
       <div className="md:max-w-5xl md:mx-auto text-center py-16 sm:py-20">
         <h2 className="text-6xl font-extrabold text-black">
           <span className="block mb-2">Boost your outcomes.</span>

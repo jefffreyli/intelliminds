@@ -20,7 +20,7 @@ export default function Services() {
                 {collegeConsultingFeatures.map((feature, index) => (
                   <li
                     key={feature.feature}
-                    className="py-4 flex md:py-0 md:pb-4 font-medium"
+                    className="py-2 flex md:py-0 md:pb-2 font-medium"
                   >
                     <CheckIcon
                       className="flex-shrink-0 h-6 w-6 text-green-500"
@@ -75,7 +75,7 @@ export default function Services() {
                     return (
                       <li
                         key={feature.feature}
-                        className="py-4 flex md:py-0 md:pb-4 font-medium"
+                        className="py-2 flex md:py-0 md:pb-2 font-medium"
                       >
                         <CheckIcon
                           className="flex-shrink-0 h-6 w-6 text-green-500"
@@ -113,7 +113,7 @@ export default function Services() {
 
 
 
-      <div className="mt-24 flex justify-between">
+      <div className="mt-24 md:flex justify-between">
         <div className="md:flex justify-center items-center">
           <div className="w-full md:w-1/2">
             <div>
