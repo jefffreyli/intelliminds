@@ -64,8 +64,17 @@ export default function Hero() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.2, duration: 1, type: "spring" }}
       >
-        <img src="/cta_main.jpg" alt="Hero Image" />
+        <div className="relative w-full max-w-lg">
+          <img className="" src="/cta_main.jpg" alt="Hero Image" />
+
+        
+        {/* <div className="absolute top-0 -right-2 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-lg opacity-50"></div> */}
+        {/* <div className="absolute -bottom-4 left-20 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-lg opacity-50"></div> */}
+        </div>
+        
       </motion.div>
+
+      {/* <div className="absolute bottom-0 -right-20 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-lg opacity-50"></div> */}
     </motion.div>
   );
 }
