@@ -1,5 +1,5 @@
 import Hero from "../components/Home/Hero";
-import Features from "../components/Home/Features";
+import WhatWeDo from "../components/Home/WhatWeDo";
 import CTA from "../components/Home/CTA";
 import CollegeLogoCloud from "../components/Home/LogoCloud";
 
@@ -8,7 +8,7 @@ const Home = () => {
     <div className="bg-white">
       <Hero />
       <CollegeLogoCloud />
-      <Features />
+      <WhatWeDo />
       <CTA />
     </div>
   );

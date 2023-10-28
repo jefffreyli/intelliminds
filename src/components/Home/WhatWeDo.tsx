@@ -18,40 +18,17 @@ const Feature = ({ heading, text }: FeatureProps) => {
 
 const GridListWithCTA = () => {
   return (
-    <div className="mx-6 sm:mx-10 md:mx-16 mb-32">
-      <div className="flex-none md:flex justify-center">
-        <div className="md:w-1/2 w-full mb-6 md:mb-0">
-          <h2 className="text-3xl font-bold mb-5 text-black">
-            Get into your dream school now.
-          </h2>
-          <button className="flex items-center space-x-2 text-purple-500 font-medium border border-1 border-purple-500 rounded-md p-2">
-            <Link
-              href="/register"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Get started now
-            </Link>
-            <ArrowSmRightIcon className="h-5 w-5" />
-          </button>
-        </div>
-        <div className="md:w-1/2 w-full">
-          <div className="space-y-4 text-gray-500">
-            <p>
-            Turn your academic aspirations into reality with our comprehensive college consulting and tutoring services. Let us guide you toward your dream school admission and a brighter future.
-            </p>
-            <p>
-              Get help with that pesky homework problem, break through an acute
-              case of writer’s block, have a quick brainstorming call, or hone
-              in on the perfect ending for that history essay you’re almost done
-              with. We are here for you.
-            </p>
-          </div>
-        </div>
+    <div className="mx-6 sm:mx-10 md:mx-16 mb-40">
+      <div className="flex justify-left">
+        <h2 className="relative text-6xl font-bold mb-10 text-purple-600">
+          What We Do
+          <span className="absolute top-0 right-0 text-3xl text-purple-600 transform translate-x-10 translate-y-1">
+            ✨
+          </span>
+        </h2>
       </div>
-      <hr className="mt-12 mb-12" />
-      
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-40 gap-y-12">
         <Feature
           heading={"Build Relationships"}
           text={
@@ -77,7 +54,6 @@ const GridListWithCTA = () => {
           }
         />
       </div>
-
     </div>
   );
 };

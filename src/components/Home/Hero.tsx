@@ -16,7 +16,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          On Demand Tutoring
+          Turning <i className="text-purple-700 bg-transparent">Dreams</i>
         </motion.h1>
         <motion.h1
           className="font-bold text-4xl md:text-6xl text-black"
@@ -24,15 +24,15 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          and Consulting at
+          into <i className="text-purple-700 bg-transparent">Degrees</i>
         </motion.h1>
         <motion.h1
-          className="font-bold text-4xl md:text-6xl text-black underline decoration-yellow-500 underline-offset-4"
+          className="font-bold text-4xl md:text-6xl text-black"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-           Affordable Prices
+           at Top Colleges
         </motion.h1>
         <div className="h-10" />
         <motion.p
@@ -64,8 +64,9 @@ export default function Hero() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.2, duration: 1, type: "spring" }}
       >
+        <img className="" src="/cta_main.jpg" alt="Hero Image" />
         <div className="relative w-full max-w-lg">
-          <img className="" src="/cta_main.jpg" alt="Hero Image" />
+          
 
         
         {/* <div className="absolute top-0 -right-2 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-lg opacity-50"></div> */}
