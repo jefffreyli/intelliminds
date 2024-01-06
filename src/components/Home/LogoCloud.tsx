@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function LogoCloud() {
   return (
     <div className="mx-6 sm:mx-10 md:mx-16 mb-12 md:mb-40 md:-mt-20">
@@ -6,13 +8,18 @@ export default function LogoCloud() {
           Consulting from the very best
         </p>
         <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-          {logos.map(logo => {
+          {logos.map((logo) => {
             return (
-              <div key={logo.name} className="col-span-1 flex justify-center py-8 px-8">
-                <img
+              <div
+                key={logo.name}
+                className="col-span-1 flex justify-center py-8 px-8"
+              >
+                <Image
                   className={`hover:brightness-[1.2] duration-500 ${logo.size}`}
                   src={logo.src}
                   alt={logo.name}
+                  height={100}
+                  width={135}
                 />
               </div>
             );

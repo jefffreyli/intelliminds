@@ -45,10 +45,10 @@ export default function Services() {
   // }
 
   return (
-    <div className="my-10">
+    <div className="my-10 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {servicesData.map((service, index) => (
-          <div key={index} className="mb-8">
+          <div key={index} className="pb-8">
             {/* Adjust the styling based on your design */}
             <Service
               title={service.title}
